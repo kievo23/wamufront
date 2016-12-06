@@ -1,0 +1,17 @@
+{% load endless %}
+{% paginate records %}
+
+
+{% for product in records %}
+	
+	<div class="bagi"><a href="/view/{{product.name}}/{{product.id}}">
+			<h4><strong>{{product.name}}</strong></h4>
+		<img src="media/{{product.photo}}">
+		<p><h5><strong>Category: </strong> {{ product.category }}</h5></p>
+		<p ><strong class="price">KSH {{product.price}} </strong></p>
+			
+		</a>
+	</div>
+
+{% endfor %}
+{% show_more %}
