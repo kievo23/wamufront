@@ -12,9 +12,6 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-import pymysql
-
-pymysql.install_as_MySQLdb()
 from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -41,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'django.contrib.sitemaps',
 
     #THIRD PARTY
@@ -98,7 +96,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'wamudjango',
         'USER': 'root',
-        'PASSWORD': 'kev@50',
+        'PASSWORD': 'U7j8^_Qe',
         'HOST': 'localhost',
         'PORT': '',
     }
