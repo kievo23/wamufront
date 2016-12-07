@@ -1,10 +1,10 @@
 
 try:
-	from .local import *
+	from .production import *
 except Exception, e:
 	pass
 
 try:
-	from .production import *
+	from .local import *
 except Exception, e:
 	pass

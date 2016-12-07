@@ -14,6 +14,9 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
 
+import pymysql
+pymysql.install_as_MySQLdb()
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
@@ -67,6 +70,8 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'djangotry.urls'
+
+SITE_ID = 2
 
 TEMPLATES = [
     {
