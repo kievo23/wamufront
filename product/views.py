@@ -14,6 +14,7 @@ from haystack.views import SearchView
 from .forms import ProductForm, ContactForm
 from .models import Product
 from category.models import Category
+from supermarket.models import Supermarket
 from userprofile.models import Userprofile
 
 # Create your views here.
@@ -41,15 +42,13 @@ def productEdit(request,id):
 def productView(request,name,id):
 	try:
 		record = Product.objects.get(id=id)
-		user = User.objects.get(id=int(record.source.id))
-		userprofile = user.userprofile
+		supermarket = Supermarket.objects.get(id=int(record.source.id))
 	except Product.DoesNotExist:
 		raise Http404("Record does not exist")
 	context= {
 		'title':record.name,
 		'record' :record,
-		'user':user,
-		'userprofile':userprofile
+		'supermarket':supermarket
 	}
 	return render(request, 'view.html', context)
 
