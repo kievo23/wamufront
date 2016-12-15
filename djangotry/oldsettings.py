@@ -52,8 +52,9 @@ INSTALLED_APPS = (
     'product',
     'userprofile',
     'sitepages',
-    'category'
-)
+    'category',
+    'supermarket'
+    )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',

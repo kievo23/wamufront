@@ -8,6 +8,7 @@ from django.utils.six.moves.urllib.parse import (
 from django.contrib.auth.models import User
 from userprofile.models import Userprofile
 from category.models import Category
+from supermarket.models import Supermarket
 # Create your models here.
 
 CATEGORY_CHOICES = (
@@ -21,7 +22,7 @@ class Product(models.Model):
 	price = models.CharField(max_length=255,blank=False,null=False)
 	category = models.ForeignKey(Category, on_delete=models.CASCADE,blank=True,null=True)
 	photo = models.FileField(upload_to='uploads/%Y/%m/%d')
-	source = models.ForeignKey(User)
+	source = models.ForeignKey(Supermarket, on_delete=models.CASCADE,blank=True,null=True)
 	descrip = models.TextField(max_length=1200,blank=False,null=False)
 	wamuprice = models.CharField(max_length=255,blank=False,null=True)
 	book_amount = models.CharField(max_length=255,blank=False,null=True)
