@@ -87,6 +87,16 @@ span.product_details {
   color: #272727 !important;
   padding-right: 10%
   padding-left:10%;
+  position: relative;
+    overflow: hidden;
+}
+.jumbotron img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
 }
 .jumbotron p{
   color: #5a5850;
