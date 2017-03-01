@@ -200,6 +200,15 @@ span.product_details {
   border-radius: 0 0 5px 5px;
 }
 
+@media screen and (max-width: 550px){
+  .bagi {
+      width: 95%;
+      border: 1px solid #D2CECE;
+      padding: 1%;
+      background: #ffffff;
+  }
+}
+
 
 @media (min-width: 768px) {
   .nav-justified {
