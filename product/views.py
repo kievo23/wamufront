@@ -39,7 +39,7 @@ def productEdit(request,id):
 	}
 	return render(request, 'edit.html', context)
 
-def productView(request,name,id):
+def productView(request,slug,id):
 	try:
 		record = Product.objects.get(id=id)
 		supermarket = Supermarket.objects.get(id=int(record.source.id))

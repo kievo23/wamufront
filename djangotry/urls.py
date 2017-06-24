@@ -32,7 +32,7 @@ urlpatterns = [
     url(r'^status/', 'sitepages.views.status', name='status'),
     url(r'^about/', 'sitepages.views.about', name='about'),
     #url(r'^update/(?P<id>\d+)/$', 'product.views.productEdit', name='update'),
-    url(r'^view/(?P<name>[\w|\W]+)/(?P<id>\d+)/$', 'product.views.productView', name='view'),
+    url(r'^view/(?P<slug>[\w|\W]+)/(?P<id>\d+)/$', 'product.views.productView', name='view'),
     url(r'^$', 'product.views.products',  name='product'),
     url(r'^search2/', include('haystack.urls')),
     url(r'^search/', 'product.views.search',  name='search'),
