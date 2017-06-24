@@ -20,6 +20,7 @@ class Product(models.Model):
 	name = models.CharField(max_length=255,blank=False,null=False)
 	code = models.CharField(max_length=255,blank=False,null=False)
 	price = models.CharField(max_length=255,blank=False,null=False)
+	slug = models.CharField(max_length=255,blank=False,null=False)
 	category = models.ForeignKey(Category, on_delete=models.CASCADE,blank=True,null=True)
 	photo = models.FileField(upload_to='uploads/%Y/%m/%d')
 	source = models.ForeignKey(Supermarket, on_delete=models.CASCADE,blank=True,null=True)
