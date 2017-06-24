@@ -4,7 +4,7 @@
 
 {% for product in records %}
 	
-	<div class="bagi"><a href="/view/{{product.object.name}}/{{product.object.id}}">
+	<div class="bagi"><a href="/view/{{product.object.slug}}/{{product.object.id}}">
 			<h4><strong>{{product.object.name}}</strong></h4>
 		<img src="http://app.wamupay.co.ke/uploads/products/{{product.object.photo}}">
 		<p><h5><strong>Category: </strong> {{ product.object.category }}</h5></p>
