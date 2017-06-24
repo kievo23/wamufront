@@ -102,7 +102,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'wamudjango',
         'USER': 'root',
-        'PASSWORD': 'U7j8^_Qe',
+        'PASSWORD': 'Wamudb17',
         'HOST': 'localhost',
         'PORT': '',
     }
