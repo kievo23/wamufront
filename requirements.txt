@@ -1,4 +1,4 @@
-Django==1.8
+Django==2.2.24
 PyMySQL==0.7.9
 Whoosh==2.7.4
 argparse==1.2.1
